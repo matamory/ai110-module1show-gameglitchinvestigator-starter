@@ -1,5 +1,14 @@
 # 🎮 Game Glitch Investigator: The Impossible Guesser
 
+
+## High-Level Note
+
+
+Students are still in the process of debugging codebases with assistance from AI coding agent. They should take enough time to properly test and debug solutions provided by AI. It will be important to redirect students to spend proper time to run the app and thoroughly investigate the buggy game before prompting AI to make any changes. I think it will be important for students to balance developing understanding of the codebase on their own and working with an AI coding agent to cowrite solutions. 
+
+
+
+
 ## 🚨 The Situation
 
 You asked an AI to build a simple "Number Guessing Game" using Streamlit.
