@@ -5,10 +5,20 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
-I get a page that is titles Game Glitch Investigator and below that a heading that reads "Make a guess" with some directions that say "Guess a number between 1 and 100. Attempts left: 7". Then developer information and the interface for making a guess. To the left of this, there are settings.
+I get a page that is titled Game Glitch Investigator and below that a heading that reads "Make a guess" with some directions that say "Guess a number between 1 and 100. Attempts left: 7". Then I see developer information and the interface for making a guess. Settings are on the left hand side and include adjustments for difficulty, range of numbers, and total attempts allowed. 
+
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
-  Number of attempts logged and listed as left does not seem to be consistent. Appears to be off by at least least 1 value. Hints do not coincide with guess and secret value. For example, if a value is 35 and user guesses 10, the hint tends to say "go lower". Unable to restart game using "New Game button". 
+  Number of attempts left does not seem to be consistent with actual number of attempts allowed. Appears to be off by at least least 1 value. 
+  Hints do not coincide with guess and secret value. For example, if a value is 35 and user guesses 10, the hint tends to say "go lower". Unable to restart game using "New Game button". 
+  
+
+| Bug Found | Expected | Actual | Error/Output |
+| ---------- | -------- | ------ | ------------ |
+| Wrong hints | Go higher/lower correctly | Hints were backwards | "Too high" on a low guess |
+| Off-by-one attempts | Count should drop by 1 | Count looked wrong at first | No error, just wrong display |
+| New Game reset | Reset board immediately | Old state sometimes stayed | No error, but reset felt broken |
+| Debug click delay | Count each submit once | First click did not count right away | No error, just delayed submit |
 
 ---
 
